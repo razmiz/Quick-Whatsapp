@@ -7,16 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7522B78224A7656F00B1CB9A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7522B78124A7656F00B1CB9A /* Extensions.swift */; };
+		7523E9CD248B821300F1C28D /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7523E9CC248B821300F1C28D /* DataSource.swift */; };
+		7523E9CF248B828500F1C28D /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7523E9CE248B828500F1C28D /* Country.swift */; };
 		7594FE19248B58160070B50C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594FE18248B58160070B50C /* AppDelegate.swift */; };
 		7594FE1B248B58160070B50C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594FE1A248B58160070B50C /* SceneDelegate.swift */; };
-		7594FE1D248B58160070B50C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594FE1C248B58160070B50C /* ViewController.swift */; };
-		7594FE20248B58160070B50C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7594FE1E248B58160070B50C /* Main.storyboard */; };
 		7594FE22248B581A0070B50C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7594FE21248B581A0070B50C /* Assets.xcassets */; };
 		7594FE25248B581A0070B50C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7594FE23248B581A0070B50C /* LaunchScreen.storyboard */; };
+		7594FE2C248B5DA60070B50C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594FE1C248B58160070B50C /* ViewController.swift */; };
+		75C05DE324A53DC9005A6506 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7594FE1E248B58160070B50C /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7594FE15248B58160070B50C /* Clipboard Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clipboard Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7522B78124A7656F00B1CB9A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		7523E9CC248B821300F1C28D /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		7523E9CE248B828500F1C28D /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		7594FE15248B58160070B50C /* Quick Whatsapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quick Whatsapp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7594FE18248B58160070B50C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7594FE1A248B58160070B50C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7594FE1C248B58160070B50C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,9 +43,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7523E9D1248B82A400F1C28D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7522B78124A7656F00B1CB9A /* Extensions.swift */,
+				7523E9CC248B821300F1C28D /* DataSource.swift */,
+				7523E9CE248B828500F1C28D /* Country.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		755FD19D248B7C61001D203E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7594FE21248B581A0070B50C /* Assets.xcassets */,
+				7594FE23248B581A0070B50C /* LaunchScreen.storyboard */,
+				7594FE18248B58160070B50C /* AppDelegate.swift */,
+				7594FE1A248B58160070B50C /* SceneDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		755FD19E248B7C70001D203E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7594FE1C248B58160070B50C /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		7594FE0C248B58160070B50C = {
 			isa = PBXGroup;
 			children = (
+				7523E9D1248B82A400F1C28D /* Model */,
+				75C05DE224A53D83005A6506 /* Views */,
+				755FD19E248B7C70001D203E /* Controllers */,
 				7594FE17248B58160070B50C /* Clipboard Test */,
 				7594FE16248B58160070B50C /* Products */,
 			);
@@ -48,7 +86,7 @@
 		7594FE16248B58160070B50C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7594FE15248B58160070B50C /* Clipboard Test.app */,
+				7594FE15248B58160070B50C /* Quick Whatsapp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,23 +94,26 @@
 		7594FE17248B58160070B50C /* Clipboard Test */ = {
 			isa = PBXGroup;
 			children = (
-				7594FE18248B58160070B50C /* AppDelegate.swift */,
-				7594FE1A248B58160070B50C /* SceneDelegate.swift */,
-				7594FE1C248B58160070B50C /* ViewController.swift */,
-				7594FE1E248B58160070B50C /* Main.storyboard */,
-				7594FE21248B581A0070B50C /* Assets.xcassets */,
-				7594FE23248B581A0070B50C /* LaunchScreen.storyboard */,
+				755FD19D248B7C61001D203E /* Supporting Files */,
 				7594FE26248B581A0070B50C /* Info.plist */,
 			);
 			path = "Clipboard Test";
 			sourceTree = "<group>";
 		};
+		75C05DE224A53D83005A6506 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7594FE1E248B58160070B50C /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7594FE14248B58160070B50C /* Clipboard Test */ = {
+		7594FE14248B58160070B50C /* Quick Whatsapp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7594FE29248B581A0070B50C /* Build configuration list for PBXNativeTarget "Clipboard Test" */;
+			buildConfigurationList = 7594FE29248B581A0070B50C /* Build configuration list for PBXNativeTarget "Quick Whatsapp" */;
 			buildPhases = (
 				7594FE11248B58160070B50C /* Sources */,
 				7594FE12248B58160070B50C /* Frameworks */,
@@ -82,9 +123,9 @@
 			);
 			dependencies = (
 			);
-			name = "Clipboard Test";
+			name = "Quick Whatsapp";
 			productName = "Clipboard Test";
-			productReference = 7594FE15248B58160070B50C /* Clipboard Test.app */;
+			productReference = 7594FE15248B58160070B50C /* Quick Whatsapp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +143,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7594FE10248B58160070B50C /* Build configuration list for PBXProject "Clipboard Test" */;
+			buildConfigurationList = 7594FE10248B58160070B50C /* Build configuration list for PBXProject "Quick Whatsapp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +156,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7594FE14248B58160070B50C /* Clipboard Test */,
+				7594FE14248B58160070B50C /* Quick Whatsapp */,
 			);
 		};
 /* End PBXProject section */
@@ -125,9 +166,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75C05DE324A53DC9005A6506 /* Main.storyboard in Resources */,
 				7594FE25248B581A0070B50C /* LaunchScreen.storyboard in Resources */,
 				7594FE22248B581A0070B50C /* Assets.xcassets in Resources */,
-				7594FE20248B58160070B50C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +179,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7594FE1D248B58160070B50C /* ViewController.swift in Sources */,
+				7594FE2C248B5DA60070B50C /* ViewController.swift in Sources */,
+				7522B78224A7656F00B1CB9A /* Extensions.swift in Sources */,
 				7594FE19248B58160070B50C /* AppDelegate.swift in Sources */,
+				7523E9CD248B821300F1C28D /* DataSource.swift in Sources */,
+				7523E9CF248B828500F1C28D /* Country.swift in Sources */,
 				7594FE1B248B58160070B50C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,7 +336,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Raz.Clipboard-Test";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Quick Whatsapp";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -310,7 +354,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Raz.Clipboard-Test";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Quick Whatsapp";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -319,7 +363,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7594FE10248B58160070B50C /* Build configuration list for PBXProject "Clipboard Test" */ = {
+		7594FE10248B58160070B50C /* Build configuration list for PBXProject "Quick Whatsapp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7594FE27248B581A0070B50C /* Debug */,
@@ -328,7 +372,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7594FE29248B581A0070B50C /* Build configuration list for PBXNativeTarget "Clipboard Test" */ = {
+		7594FE29248B581A0070B50C /* Build configuration list for PBXNativeTarget "Quick Whatsapp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7594FE2A248B581A0070B50C /* Debug */,
